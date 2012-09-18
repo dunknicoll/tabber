@@ -1,0 +1,54 @@
+// Css3.sass
+// Vendor specific populating CSS3 mixin rules.
+//
+// @date	: 14/09/2011
+// @author	: Greg McAusland
+
+@mixin borderRadius ( $rad )
+	border-radius: $rad
+	-webkit-border-radius: $rad
+	-moz-border-radius: $rad
+	-o-border-radius: $rad
+
+@mixin borderRadiusTopLeft ( $rad )
+	border-top-left-radius: $rad
+	-webkit-border-top-left-radius: $rad
+	-moz-border-top-left-radius: $rad
+	-o-border-top-left-radius: $rad
+
+@mixin borderRadiusTopRight ( $rad )
+	border-top-right-radius: $rad
+	-webkit-border-top-right-radius: $rad
+	-moz-border-top-right-radius: $rad
+	-o-border-top-right-radius: $rad
+
+@mixin borderRadiusBottomLeft ( $rad )
+	border-bottom-left-radius: $rad
+	-webkit-border-bottom-left-radius: $rad
+	-moz-border-bottom-left-radius: $rad
+	-o-border-bottom-left-radius: $rad
+
+@mixin borderRadiusBottomRight ( $rad )
+	border-bottom-right-radius: $rad
+	-webkit-border-bottom-right-radius: $rad
+	-moz-border-bottom-right-radius: $rad
+	-o-border-bottom-right-radius: $rad
+
+@mixin boxShadow( $x, $y, $spread, $blur, $col)
+	box-shadow: $x $y $spread $blur $col
+	-webkit-box-shadow: $x $y $spread $blur $col
+	-moz-box-shadow: $x $y $spread $blur $col
+	-o-box-shadow: $x $y $spread $blur $col
+
+@mixin innerShadow( $x, $y, $spread, $blur, $col)
+	box-shadow: inset $x $y $spread $blur $col
+	-webkit-box-shadow: inset $x $y $spread $blur $col
+	-moz-box-shadow: inset $x $y $spread $blur $col
+	-o-box-shadow: inset $x $y $spread $blur $col
+
+@mixin transition( $target, $duration, $easing )
+	-webkit-transition:  $target $duration $easing
+	-moz-transition: $target $duration $easing
+	-o-transition: $target $duration $easing
+	-ms-transition: $target $duration $easing
+	transition: $target $duration $easing
