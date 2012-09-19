@@ -1,5 +1,7 @@
-tabber
-======
+Forked from Greg McAusland's jQuery version - http://github.com/gregmcausland/tabber
+
+tabber - Mootools version
+=========================
 In an effort to not rewrite tab code every single project i seem to engage in, here's a small fairly tight reusable tabbing class. Not user friendly in terms of error checking, if the markup is correct it wont fail.
 
 Usage:
