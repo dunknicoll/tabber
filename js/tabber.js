@@ -12,8 +12,8 @@ ADTabber.prototype._init = function() {
 	// Cache and hide the tabs
 	for (var i=0; i<this.$menu.length; i++) {
 		href = $(this.$menu[i]).get('href')
-		$tab = $(this).getElements('a[href^='+href+']')
-		console.log($tab)
+		console.log(href)
+		$tab = $$(href)[0]
 		this.$tablist[href] = $tab
 	}
 	this._hideTabs()
@@ -29,7 +29,7 @@ ADTabber.prototype._init = function() {
 ADTabber.prototype._hideTabs = function() {
 	this.$menu.removeClass('active')
 	for (tab in this.$tablist) {
-		this.$tablist[tab].hide()
+		this.$tablist[tab].setStyle('display','none')
 	}
 }
 
@@ -38,6 +38,6 @@ ADTabber.prototype._showTab = function( menu ) {
 		$tab 	= this.$tablist[$this.get('href')]
 
 	this._hideTabs()
-	$tab.show()
+	$tab.setStyle('display','block')
 	$this.addClass('active')
 }
