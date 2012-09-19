@@ -8,7 +8,7 @@ Usage:
 
 1) Link your href to the id of the tab, like you would an on page anchor.
 
-2) Call the script passing the selector of your a links:
-   new ADTabber( '#tabs a' )
+2) Call the script passing the selector for the container of your a links:
+   new ADTabber( 'tabs' )
 
-3) dont forget to include jquery.
+3) dont forget to include mootools.
