@@ -1,7 +1,10 @@
 function ADTabber( menu_selector ) {
-	this.$menu 		= $(menu_selector).getElements('a')
-	this.$tablist	= {}
-	this._init()
+	if( $(menu_selector) )
+	{
+		this.$menu 		= $(menu_selector).getElements('a')
+		this.$tablist	= {}
+		this._init()
+	}
 }
 
 ADTabber.prototype._init = function() {
@@ -12,7 +15,6 @@ ADTabber.prototype._init = function() {
 	// Cache and hide the tabs
 	for (var i=0; i<this.$menu.length; i++) {
 		href = $(this.$menu[i]).get('href')
-		console.log(href)
 		$tab = $$(href)[0]
 		this.$tablist[href] = $tab
 	}
